@@ -43,8 +43,8 @@ public class CSUtilityClass {
     @BeforeTest
     public void CSbrowserlaunch(){
 
-        WebDriverManager.edgedriver().setup();
-        driver = new EdgeDriver();
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
         driver.get("https://adactinhotelapp.com/index.php");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
