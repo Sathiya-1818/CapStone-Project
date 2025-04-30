@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-29T20:01:29 IST" name="Suite" finished-at="2025-04-29T20:02:52 IST" duration-ms="83121">
+    <groups>
+      <group name="A">
+        <method signature="T3_RegressionTest.LoginTest()[pri:1, instance:TestCases.T3_RegressionTest@71a8adcf]" name="LoginTest" class="TestCases.T3_RegressionTest"/>
+        <method signature="T3_RegressionTest.CheckInTest()[pri:2, instance:TestCases.T3_RegressionTest@71a8adcf]" name="CheckInTest" class="TestCases.T3_RegressionTest"/>
+        <method signature="T3_RegressionTest.BookingTest()[pri:3, instance:TestCases.T3_RegressionTest@71a8adcf]" name="BookingTest" class="TestCases.T3_RegressionTest"/>
+        <method signature="T3_RegressionTest.Logout()[pri:4, instance:TestCases.T3_RegressionTest@71a8adcf]" name="Logout" class="TestCases.T3_RegressionTest"/>
+      </group> <!-- A -->
+      <group name="B">
+        <method signature="T4_CancelBookingTest.CSLoginTest()[pri:1, instance:TestCases.T4_CancelBookingTest@3012646b]" name="CSLoginTest" class="TestCases.T4_CancelBookingTest"/>
+        <method signature="T4_CancelBookingTest.CSCancelBooking()[pri:2, instance:TestCases.T4_CancelBookingTest@3012646b]" name="CSCancelBooking" class="TestCases.T4_CancelBookingTest"/>
+      </group> <!-- B -->
+      <group name="C">
+        <method signature="T2_CSInvalidLoginTest.CSInvalidLoginTest()[pri:1, instance:TestCases.T2_CSInvalidLoginTest@5824a83d]" name="CSInvalidLoginTest" class="TestCases.T2_CSInvalidLoginTest"/>
+      </group> <!-- C -->
+    </groups>
+    <test started-at="2025-04-29T20:01:29 IST" name="Regression Test" finished-at="2025-04-29T20:02:18 IST" duration-ms="49134">
+      <class name="TestCases.T3_RegressionTest">
+        <test-method is-config="true" signature="CSbrowserlaunch()[pri:0, instance:TestCases.T3_RegressionTest@71a8adcf]" started-at="2025-04-29T20:01:29 IST" name="CSbrowserlaunch" finished-at="2025-04-29T20:01:33 IST" duration-ms="4229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CSbrowserlaunch -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.T3_RegressionTest@71a8adcf]" started-at="2025-04-29T20:01:33 IST" name="setup" finished-at="2025-04-29T20:01:33 IST" depends-on-methods="UtilityClass.CSUtilityClass.CSbrowserlaunch" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:TestCases.T3_RegressionTest@71a8adcf]" started-at="2025-04-29T20:01:33 IST" name="testDetails" finished-at="2025-04-29T20:01:33 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method signature="LoginTest()[pri:1, instance:TestCases.T3_RegressionTest@71a8adcf]" started-at="2025-04-29T20:01:33 IST" name="LoginTest" finished-at="2025-04-29T20:01:35 IST" duration-ms="1284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method signature="CheckInTest()[pri:2, instance:TestCases.T3_RegressionTest@71a8adcf]" started-at="2025-04-29T20:01:35 IST" name="CheckInTest" finished-at="2025-04-29T20:01:43 IST" duration-ms="8462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckInTest -->
+        <test-method signature="BookingTest()[pri:3, instance:TestCases.T3_RegressionTest@71a8adcf]" started-at="2025-04-29T20:01:43 IST" name="BookingTest" finished-at="2025-04-29T20:02:10 IST" duration-ms="27229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookingTest -->
+        <test-method signature="Logout()[pri:4, instance:TestCases.T3_RegressionTest@71a8adcf]" started-at="2025-04-29T20:02:10 IST" name="Logout" finished-at="2025-04-29T20:02:17 IST" duration-ms="6469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="CScloseBrowser()[pri:0, instance:TestCases.T3_RegressionTest@71a8adcf]" started-at="2025-04-29T20:02:17 IST" name="CScloseBrowser" finished-at="2025-04-29T20:02:18 IST" duration-ms="1208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CScloseBrowser -->
+      </class> <!-- TestCases.T3_RegressionTest -->
+    </test> <!-- Regression Test -->
+    <test started-at="2025-04-29T20:02:18 IST" name="Smoke Test" finished-at="2025-04-29T20:02:47 IST" duration-ms="28620">
+      <class name="TestCases.T4_CancelBookingTest">
+        <test-method is-config="true" signature="CSbrowserlaunch()[pri:0, instance:TestCases.T4_CancelBookingTest@3012646b]" started-at="2025-04-29T20:02:18 IST" name="CSbrowserlaunch" finished-at="2025-04-29T20:02:21 IST" duration-ms="3368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CSbrowserlaunch -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.T4_CancelBookingTest@3012646b]" started-at="2025-04-29T20:02:21 IST" name="setup" finished-at="2025-04-29T20:02:21 IST" depends-on-methods="UtilityClass.CSUtilityClass.CSbrowserlaunch" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:TestCases.T4_CancelBookingTest@3012646b]" started-at="2025-04-29T20:02:21 IST" name="testDetails" finished-at="2025-04-29T20:02:21 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method signature="CSLoginTest()[pri:1, instance:TestCases.T4_CancelBookingTest@3012646b]" started-at="2025-04-29T20:02:21 IST" name="CSLoginTest" finished-at="2025-04-29T20:02:23 IST" duration-ms="1202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CSLoginTest -->
+        <test-method signature="CSCancelBooking()[pri:2, instance:TestCases.T4_CancelBookingTest@3012646b]" started-at="2025-04-29T20:02:23 IST" name="CSCancelBooking" finished-at="2025-04-29T20:02:47 IST" duration-ms="24045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CSCancelBooking -->
+        <test-method is-config="true" signature="CScloseBrowser()[pri:0, instance:TestCases.T4_CancelBookingTest@3012646b]" started-at="2025-04-29T20:02:47 IST" name="CScloseBrowser" finished-at="2025-04-29T20:02:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CScloseBrowser -->
+      </class> <!-- TestCases.T4_CancelBookingTest -->
+    </test> <!-- Smoke Test -->
+    <test started-at="2025-04-29T20:02:47 IST" name="Validation Test" finished-at="2025-04-29T20:02:52 IST" duration-ms="5346">
+      <class name="TestCases.T2_CSInvalidLoginTest">
+        <test-method is-config="true" signature="CSbrowserlaunch()[pri:0, instance:TestCases.T2_CSInvalidLoginTest@5824a83d]" started-at="2025-04-29T20:02:47 IST" name="CSbrowserlaunch" finished-at="2025-04-29T20:02:50 IST" duration-ms="3320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CSbrowserlaunch -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.T2_CSInvalidLoginTest@5824a83d]" started-at="2025-04-29T20:02:50 IST" name="setup" finished-at="2025-04-29T20:02:50 IST" depends-on-methods="UtilityClass.CSUtilityClass.CSbrowserlaunch" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:TestCases.T2_CSInvalidLoginTest@5824a83d]" started-at="2025-04-29T20:02:50 IST" name="testDetails" finished-at="2025-04-29T20:02:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method signature="CSInvalidLoginTest()[pri:1, instance:TestCases.T2_CSInvalidLoginTest@5824a83d]" started-at="2025-04-29T20:02:50 IST" name="CSInvalidLoginTest" finished-at="2025-04-29T20:02:51 IST" duration-ms="849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CSInvalidLoginTest -->
+        <test-method is-config="true" signature="CScloseBrowser()[pri:0, instance:TestCases.T2_CSInvalidLoginTest@5824a83d]" started-at="2025-04-29T20:02:51 IST" name="CScloseBrowser" finished-at="2025-04-29T20:02:52 IST" duration-ms="1173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CScloseBrowser -->
+        <test-method is-config="true" signature="DBreportClose()[pri:0, instance:TestCases.T2_CSInvalidLoginTest@5824a83d]" started-at="2025-04-29T20:02:52 IST" name="DBreportClose" finished-at="2025-04-29T20:02:52 IST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DBreportClose -->
+      </class> <!-- TestCases.T2_CSInvalidLoginTest -->
+    </test> <!-- Validation Test -->
+  </suite> <!-- Suite -->
+</testng-results>
