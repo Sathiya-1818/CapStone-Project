@@ -55,6 +55,43 @@ public class CSUtilityClass {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
+    public static void readFromPropFile(String fileName) throws IOException {
+
+        FileReader file = new FileReader("C:\\Users\\HOSUR PS\\IdeaProjects\\MainProject\\src\\test\\resources\\CSTestData\\"+fileName+".properties");
+        Prop = new Properties();
+        Prop.load(file);
+    }
+
+    public static String[][] CSexcelRead(String sheetName) throws IOException {
+
+        XSSFWorkbook book = new XSSFWorkbook("C:\\Users\\HOSUR PS\\IdeaProjects\\MainProject\\src\\test\\resources\\CSTestData\\CSLoginData.xlsx");
+
+        XSSFSheet sheet = book.getSheet(sheetName);
+
+        int rowCount = sheet.getLastRowNum();
+
+        int columnCount = sheet.getRow(0).getLastCellNum();
+
+        String[][] data = new String[rowCount][columnCount];
+
+        for(int i =1 ; i <= rowCount; i++) {
+
+            XSSFRow row = sheet.getRow(i);
+
+            for(int j =0 ; j<columnCount; j++) {
+
+                XSSFCell cell = row.getCell(j);
+
+                data[i-1][j] = cell.getStringCellValue();
+
+            }
+
+        }
+
+        book.close();
+        return data;
+    }
+
     public static String captureScreenshot(String testName) {
 
         if (driver == null) {
