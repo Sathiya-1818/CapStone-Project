@@ -3,11 +3,7 @@ package UtilityClass;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.commons.io.FileUtils;
-import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -18,7 +14,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-
 
 import java.io.File;
 import java.io.FileReader;
@@ -59,44 +54,6 @@ public class CSUtilityClass {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
         wait.until(ExpectedConditions.visibilityOf(element));
     }
-
-    public static void readFromPropFile(String fileName) throws IOException {
-
-        FileReader file = new FileReader("C:\\Users\\HOSUR PS\\IdeaProjects\\MainProject\\src\\test\\resources\\CSTestData\\"+fileName+".properties");
-        Prop = new Properties();
-        Prop.load(file);
-    }
-
-    public static String[][] CSexcelRead(String sheetName) throws IOException {
-
-        XSSFWorkbook book = new XSSFWorkbook("C:\\Users\\HOSUR PS\\IdeaProjects\\MainProject\\src\\test\\resources\\CSTestData\\CSLoginData.xlsx");
-
-        XSSFSheet sheet = book.getSheet(sheetName);
-
-        int rowCount = sheet.getLastRowNum();
-
-        int columnCount = sheet.getRow(0).getLastCellNum();
-
-        String[][] data = new String[rowCount][columnCount];
-
-        for(int i =1 ; i <= rowCount; i++) {
-
-            XSSFRow row = sheet.getRow(i);
-
-            for(int j =0 ; j<columnCount; j++) {
-
-                XSSFCell cell = row.getCell(j);
-
-                data[i-1][j] = cell.getStringCellValue();
-
-            }
-
-        }
-
-        book.close();
-        return data;
-    }
-
 
     public static String captureScreenshot(String testName) {
 
